@@ -1,0 +1,104 @@
+/* Nền chung sạch sẽ hơn */
+body {
+    background-color: #f4f7fe; /* Màu nền xám xanh nhạt giống ảnh */
+    font-family: 'Poppins', sans-serif; /* Gợi ý dùng font hiện đại nếu có thể nhúng */
+}
+
+/* --- Style cho màn hình đăng nhập (Giữ lại vẻ hiện đại cũ) --- */
+.login-card {
+    width: 400px; border-radius: 20px; border: none;
+    background: rgba(255, 255, 255, 0.95); box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+.gradient-btn {
+    background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); border: none; font-weight: bold; padding: 12px; border-radius: 12px;
+}
+.gradient-btn:hover { background: linear-gradient(to right, #00f2fe 0%, #4facfe 100%); transform: translateY(-2px); }
+.gradient-icon { background: -webkit-linear-gradient(#4facfe, #00f2fe); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+
+/* --- STYLE MỚI CHO DASHBOARD (Dựa trên ảnh tham khảo) --- */
+/* --- STYLE MỚI CHO DASHBOARD --- */
+
+.dashboard-wrapper {
+    min-height: 100vh;
+}
+
+/* CẬP NHẬT MỚI: Thẻ Card đều nhau và căn giữa */
+.cat-card {
+    border: none;
+    border-radius: 25px; /* Bo góc tròn */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    min-height: 200px; /* QUAN TRỌNG: Quy định chiều cao tối thiểu để các ô bằng nhau */
+    position: relative;
+    overflow: hidden;
+}
+
+/* Hiệu ứng nổi lên khi di chuột */
+.cat-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Class mới để căn chỉnh Icon đẹp hơn */
+.icon-box {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Font chữ tiêu đề môn học */
+.cat-card h5 {
+    font-size: 1.1rem;
+    margin-top: 10px;
+    margin-bottom: 8px;
+}
+
+/* Màu sắc nền Gradient cho từng môn */
+.bg-math { background: linear-gradient(135deg, #5b73e8, #4458c9); } /* Xanh dương */
+.bg-phys { background: linear-gradient(135deg, #00c6ff, #0072ff); } /* Xanh lơ */
+.bg-chem { background: linear-gradient(135deg, #ff758c, #ff7eb3); } /* Hồng */
+.bg-eng  { background: linear-gradient(135deg, #a18cd1, #fbc2eb); } /* Tím hồng */
+.bg-bio  { background: linear-gradient(135deg, #fad0c4, #ffd1ff); } /* Cam nhạt */
+.bg-hist { background: linear-gradient(135deg, #8e44ad, #c0392b); } /* Đỏ tím */
+.bg-gdqp { background: linear-gradient(135deg, #34495e, #2c3e50); } /* Xám xanh */
+
+/* Hiệu ứng fade-in khi vào dashboard */
+.fade-in { animation: fadeIn 0.6s ease-in-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Các utility class phụ trợ */
+.rounded-4 { border-radius: 20px !important; }
+.shadow-sm { box-shadow: 0 5px 15px rgba(0,0,0,0.05) !important; }
+/* Style chung cho các thẻ Categories */
+.cat-card {
+    border: none;
+    border-radius: 25px; /* Bo góc rất tròn */
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+.cat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+/* Màu sắc riêng cho từng môn (Tone Pastel đậm) */
+.bg-math { background: linear-gradient(135deg, #5b73e8, #4458c9); } /* Xanh dương đậm */
+.bg-phys { background: linear-gradient(135deg, #00c6ff, #0072ff); } /* Xanh lơ */
+.bg-chem { background: linear-gradient(135deg, #ff758c, #ff7eb3); } /* Hồng */
+.bg-eng  { background: linear-gradient(135deg, #a18cd1, #fbc2eb); } /* Tím hồng */
+.bg-bio  { background: linear-gradient(135deg, #fad0c4, #ffd1ff); } /* Cam nhạt */
+.bg-hist { background: linear-gradient(135deg, #8e44ad, #c0392b); } /* Đỏ tím */
+.bg-gdqp { background: linear-gradient(135deg, #34495e, #2c3e50); } /* Xám xanh */
+
+/* Hiệu ứng fade-in khi vào dashboard */
+.fade-in { animation: fadeIn 0.6s ease-in-out; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+
+/* Các utility class khác */
+.rounded-4 { border-radius: 20px !important; }
+.shadow-sm { box-shadow: 0 5px 15px rgba(0,0,0,0.05) !important; }
